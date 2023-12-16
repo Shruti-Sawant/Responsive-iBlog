@@ -1,0 +1,81 @@
+.post-img {
+    height: 600px;
+    overflow: hidden;
+}
+
+.post-img {
+    width: 100%;
+    background-image: url(../media/nature.jpg);
+}
+
+.post-img p {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-shadow: 2px 8px 4px black;
+
+}
+
+.blog-post-content h1,
+h2 {
+    text-align: center;
+    font-family: var(--font2);
+}
+
+.blog-post-content p {
+    padding: 15px 50px;
+    margin: 0 175px;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.more-post {
+    flex-direction: column;
+}
+
+.blog-article-img-container {
+    width: 395px;
+    height: 250px;
+}
+
+.blog-article-content-container {
+    width: 295px;
+    padding-top: 12px;
+}
+
+.blogpost-meta {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-info div {
+    padding: 4px 218px;
+}
+
+.author-info {
+    margin: 12px 0px;
+}
+
+.social {
+    margin: 12px 0;
+    padding: 4px 256px;
+}
+
+.social svg {
+    padding-right: 53px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.font3 {
+    font-weight: bold;
+}

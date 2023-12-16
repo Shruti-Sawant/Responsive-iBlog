@@ -1,0 +1,20 @@
+.contact-content {
+    height: 60vh;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+    display: flex;
+}
+
+.contact-content::after {
+    content: "";
+    background-image: url(../media/2.jpg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: inherit;
+    opacity: 0.2;
+    border-radius: 10px;
+    z-index: -1;
+}
