@@ -16,6 +16,9 @@
     font-size: 30px;
     display: flex;
 }
+.nav-left span b a{
+    color: rgb(129, 129, 113);
+}
 
 .nav-left ul {
     display: flex;
@@ -60,6 +63,7 @@
     width: 100%;
     height: inherit;
     background-repeat: no-repeat;
+    
     opacity: 0.2;
     border-radius: 10px;
 }

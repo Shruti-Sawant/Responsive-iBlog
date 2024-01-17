@@ -1,26 +1,43 @@
 @media screen and (max-width:1369px) {
+
+    body{
+        margin: 0 8px;
+    }
+    .max-width-1 {
+        max-width:none;
+    }
+
+    .max-width-2 {
+        max-width:none;
+    }
+
     .navigation {
         flex-direction: column;
         margin: 23px;
         /* margin-left: 100px; */
     }
 
+    .nav-left ul{
+        margin-left: 2px ;
+        margin-right: 2px ;
+    }
     .nav-left span {
         margin-bottom: 22px;
-        background-color: rgb(204, 210, 212);
+        /* background-color: rgb(204, 210, 212); */
     }
 
     .nav-left {
         flex-direction: column;
         text-align: center;
         margin: 12px 0;
-        margin-left: 40px;
+        /* margin-left: 40px; */
+        margin-left: 0;
     }
 
     .nav-right form {
         display: flex;
         flex-direction: row;
-        margin-left: 42px;
+        margin-left: 0;
     }
 
     .content-right {
@@ -33,19 +50,25 @@
 
     .home-article-img {
         text-align: center;
-        width: 50vw;
+        width: 274px;
     }
 
     .home-article-content {
-        width: 50vw;
+        width: 274px;
         margin-top: 10px;
         padding-left: 0;
+    }
+    .home-article-content-container{
+        width: auto;
     }
 
     .contact-content {
         height: 100vh;
     }
 
+    .content::after {
+        width: 337px;
+    }
     .contact-content::after {
         background-repeat: no-repeat;
         background-size: cover;
@@ -56,6 +79,10 @@
         width: 66vw;
     }
 
+    .blog-article-img-container {
+        width: 95px;
+    }
+
     .blog-post-content p {
         margin: 0;
         padding: 15px 0;
@@ -63,6 +90,7 @@
 
     .author-info div {
         padding: 4px 0px;
+        width: 235px;
     }
 
     .row {
@@ -71,7 +99,6 @@
 
     .social {
         padding: 4px 10px;
-        margin-left: 50vw;
     }
 
     .social svg {
@@ -91,9 +118,12 @@
     .gallery-container {
         display: flex;
         flex-direction: column;
+        margin: 30px 50px;
     }
 
     .gallery-display {
+        margin-bottom: 20px;
+        height: 400px;
         margin-left: 0;
         position: relative;
         left: -300px;

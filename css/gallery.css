@@ -50,3 +50,8 @@
 .gallery-img:hover {
     opacity: 0.5;
 }
+
+.gallery-display i{
+    width: 200px;
+    height:200px;
+}
