@@ -67,7 +67,7 @@
     }
 
     .content::after {
-        width: 337px;
+        width: 93vw;
     }
     .contact-content::after {
         background-repeat: no-repeat;
@@ -128,8 +128,18 @@
         position: relative;
         left: -300px;
         width: 10px;
+    }
+    .gallery-display:hover{
         -webkit-animation: slide 0.5s forwards;
         -webkit-animation-delay: 2s;
+    }
+    .gallery-display:hover::after{
+        margin-bottom: 20px;
+        height: 400px;
+        margin-left: 0;
+        position: relative;
+        left: -300px;
+        width: 10px;
     }
 
     @-webkit-keyframes slide {
