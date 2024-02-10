@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@200&family=Ubuntu:wght@400;500&display=swap');
 
 :root {
-    --main-bg-color: rgb(78, 76, 79);
+    --main-bg-color: rgb(117, 107, 126);
     --font1: 'Roboto', sans-serif;
     --font2: 'Ubuntu', sans-serif;
     --font3: 'Source Code Pro', monospace;
@@ -46,6 +46,7 @@
     font-family: var(--font1);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    margin-right: 12px;
 }
 
 .btn:hover {

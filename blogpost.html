@@ -4,30 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/util.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/blogpost.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/util.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/blogpost.css">
+    <link rel="stylesheet" href="/css/mobile.css">
     <title>iBlog</title>
 </head>
 
 <body>
     <nav class="navigation max-width-1 m-auto my-2">
-        <div class="nav-left">
-            <img src="" alt="">
-            <span><b><a href="/blogpost.html">ìβӀօց</a></b></span>
-            <ul>
+        <a href="/blogpost.html"><img src="/media/logo.jpg" alt="logo"></a>
+        <div class="group">
+            <ul class="list-nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="/Gallery.html">Gallery</a></li>
+                <li><a href="/Gallery.html" target="_self">Gallery</a></li>
                 <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/blogpost.html">Blog</a></li>
             </ul>
+
+           
+
+            <div class="search">
+                <span class="icon">
+                    <i class="ri-search-line search-btn"></i>
+                    <i class="ri-close-line close-btn"></i>
+                </span>
+
+            </div>
+            <i class="ri-menu-line togglebar"></i>
         </div>
-        <div class="nav-right">
-            <form action="/search.html" method="get">
-                <div><input class="form-input" type="text" name="query" placeholder="Article Search"></div>
-                <div><button class="btn">Search</button></div>
-            </form>
+        <div class="search-Box">
+            <input type="text" placeholder="Search here....">
         </div>
     </nav>
 
@@ -322,6 +332,23 @@
         Copyright &copy; iBlog.com
         <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits:Vecteezy </a>
     </div>
+    <script type="module" src="/js/app.js"></script>
+    <script>
+        let  searchbtn = document.querySelector('.search-btn');
+        let closebtn = document.querySelector('.close-btn');
+         let searchBox = document.querySelector('.search-Box');
+         let navigation = document.querySelector('.navigation');
+         let listnav = document.querySelector('.list-nav');
+         let menuToggle = document.querySelector('.togglebar');
+         
+        searchbtn.addEventListener('hover', () => {
+            searchBox.classList.remove('active');
+            closebtn.classList.remove('active');
+            searchbtn.classList.remove('active');
+            menuToggle.classList.add('hide')
+        })
+
+    </script>
 </body>
 
 </html>
