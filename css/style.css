@@ -10,7 +10,9 @@
     align-items: center;
     padding: 0 8px;
 }
-
+.menu-btn{
+    display: none;
+  }
 
 .nav-left {
     font-size: 30px;

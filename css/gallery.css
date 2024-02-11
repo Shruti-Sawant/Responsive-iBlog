@@ -55,3 +55,47 @@
     width: 200px;
     height:200px;
 }
+
+
+  
+  .client {
+    background-color: var(--extra-light);
+  }
+  
+  .swiper {
+    width: 100%;
+    padding-top: 4rem;
+    margin-top: 2rem;
+  }
+  
+  .swiper-slide {
+    max-width: 400px;
+  }
+  
+  .client__card {
+    padding: 2rem;
+    padding-top: 0;
+    text-align: center;
+    background-color: var(--white);
+  }
+  
+  .client__card img {
+    margin: auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .client__card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .client__card p {
+    color: var(--text-light);
+  }
+  
+  .client__ratings {
+    margin-block: 1rem;
+    color: goldenrod;
+  }
+  

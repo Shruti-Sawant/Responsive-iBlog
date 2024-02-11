@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/util.css">
     <link rel="stylesheet" href="css/mobile.css">
@@ -13,11 +14,15 @@
 <body>
     <nav class="navigation max-width-1 m-auto my-2">
         <div class="nav-left">
-            <span><b><a href="/blogpost.html">ìβӀօց</a></b></span>
-            <ul>
+            <span><b><a href="/blogpost.html">ìβӀօց</a></b>
+                <p class="menu-btn"><i class="ri-menu-line  menuToggle"></i></p>
+            </span>
+
+            <ul class="listbar">
                 <li><a href="/">Home</a></li>
                 <li><a href="/Gallery.html">Gallery</a></li>
                 <li><a href="/contact.html">Contact</a></li>
+                <li> <a href="/articlepost.html">Post article</a> </li>
             </ul>
         </div>
         <div class="nav-right">
@@ -103,6 +108,24 @@
         Copyright &copy; iBlog.com
         <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits:Vecteezy </a>
     </div>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".listbar");
+        const menuBtnIcon = menuBtn.querySelector("i");
+        navLinks.classList.add('close');
+        menuBtn.addEventListener("click", (e) => {
+            navLinks.classList.toggle("open");
+            navLinks.classList.remove('close');
+            const isOpen = navLinks.classList.contains("open");
+            menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+           navLinks.setAttribute('class',isOpen? "listbar open":"listbar close")
+        });
+
+        navLinks.addEventListener("click", (e) => {
+            navLinks.classList.remove("open");
+            menuBtnIcon.setAttribute("class", "ri-menu-line");
+        });
+    </script>
 </body>
 
 </html>
